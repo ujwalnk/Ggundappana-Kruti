@@ -29,7 +29,7 @@ Future<List> readJsonFile(String filePath) async {
 Future run() async{
   debugPrint("Run function call");
 
-  List dataList = await readJsonFile("assets/mankutimma.json");
+  List dataList = await readJsonFile("assets/database/mankutimma.json");
   debugPrint("Got dataList");
   final box = await Hive.openBox("hive_box");
 
